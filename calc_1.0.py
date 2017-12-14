@@ -1,8 +1,6 @@
-number_1 = raw_input("Nummer 1: ");
-operator = raw_input("Operator: ");
-number_2 = raw_input("Nummer 2: ");
-
-#if isinstance(number_1, int) and isinstance(number_2, int):
+number_1 = input("Nummer 1: ");
+operator = input("Operator: ");
+number_2 = input("Nummer 2: ");
 
 if operator == "+":
 	print("Ergebnis: ", float(number_1) + float(number_2));
@@ -13,7 +11,9 @@ elif operator == "*":
 elif operator == "/":
 	print("Ergebnis: ", float(number_1) / float(number_2));
 else:
+        #operator != /, *, + or -
 	print("Ungueltiger Operator");
+print("");
 
-#else:
-		#print("Eine eingegebene Zahl ist keine Zahl");
+#Keep console window open
+input("Taste druecken um zu beenden");
